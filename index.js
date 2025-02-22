@@ -83,7 +83,7 @@ async function transferNEX(to, amount = "0.1") {
 }
 
 function askForInput() {
-    cfonts.say("NT Exhaust", {
+    cfonts.say("END AIRDROP", {
         font: "block",
         align: "center",
         colors: ["cyan", "magenta"],
@@ -94,7 +94,7 @@ function askForInput() {
         maxLength: "0",
     });
 
-    console.log(chalk.blue.bold("=== Telegram Channel : NT Exhaust (@NTExhaust) ===", "\x1b[36m"));
+    console.log(chalk.blue.bold("=== Telegram Channel : END AIRDROP (https://t.me/endingdrop) ===", "\x1b[36m"));
 
     rl.question("Enter recipient addresses (comma-separated): ", (addresses) => {
         const recipients = addresses.split(",").map(addr => addr.trim());
